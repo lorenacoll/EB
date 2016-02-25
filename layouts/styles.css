@@ -68,6 +68,9 @@ a, a:hover, button {
 .home{
 	background:url(images/background.png) top center no-repeat;}
 
+.aranceles{
+	background:url(images/aranceles-background.png) top center no-repeat;}
+
 .contacto{
 	background:url(images/contacto-background.png) top center no-repeat;}
 
@@ -140,6 +143,9 @@ a, a:hover, button {
 	text-shadow:0px 3px 0px #000000;
 	font-weight:normal;
 	margin-bottom:100px;
+}
+.aranceles #content .title h3{
+	margin-bottom:58px;
 }
 
 #content .content{
@@ -215,8 +221,53 @@ a, a:hover, button {
 
 #content .map pre{
 	font-family: 'HelveticaCondensed';
-	font-size:12px;
+	font-size:11px;
 	padding:27px 0 0 14px;}
+
+#content .content .aran{
+	padding:30px 100px 10px 100px;
+}
+
+.content .aran h2{
+	background:#4470b5;
+	color:#FFF;
+	font-family: 'HelveticaCondensed';
+	font-size:14px;
+	text-align:center;
+	padding:5px 0 5px 0;
+}
+.content .aran .izq{
+	width:60%;
+	position:relative;
+	float:left;
+}
+.content .aran .der{
+	position:relative;
+	float: right;
+	width:40%;
+}
+
+.content .aran p{
+	border-bottom:solid 1px #c7c7c7;
+	color:#002338;
+	font-family: 'HelveticaCondensed';
+	font-size:14px;
+	padding:8px 0 8px 16px;
+}
+.content .aran p.end{
+	border-bottom:none;
+}
+
+.content .aran .info{
+	position:relative;
+	float:left;
+	margin-top:20px;}
+
+.content .aran .info p{
+	color:#9a999e;
+	border:none;
+	font-family: 'HelveticaMediumCondensed';
+	font-size:12px;}
 
 #content .content .cotizacion{
 	height:54px;
