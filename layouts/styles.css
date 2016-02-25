@@ -36,7 +36,8 @@ img {
 	width: auto;
 }
 a {
-	color: inherit
+	color: inherit;
+	text-decoration:none;
 }
 a, a:hover, button {
 	cursor: pointer
@@ -66,10 +67,13 @@ a, a:hover, button {
 	margin: auto;
 	max-width:1001px;}
 .home{
-	background:url(images/background.png) top center no-repeat;}
+	background:url(images/background.png) #ebebeb top center no-repeat;}
 
 .aranceles{
-	background:url(images/aranceles-background.png) top center no-repeat;}
+	background:url(images/aranceles-background.png) #ebebeb top center no-repeat;}
+
+.apertura{
+	background:url(images/aperturadecuenta-background.png) #ebebeb top center no-repeat;}
 
 .contacto{
 	background:url(images/contacto-background.png) top center no-repeat;}
@@ -109,7 +113,6 @@ a, a:hover, button {
 .menu ul li a{
 	position:relative;
 	color:#fff;
-	text-decoration:none;
 	text-transform:uppercase;
 	margin-right:4px;
 	padding-left:10px;}
@@ -127,7 +130,6 @@ a, a:hover, button {
 	color:#fff;}
 
 #content .title a{
-	text-decoration:none;
 	color:#fff;}
 
 #content .title h2{
@@ -228,13 +230,68 @@ a, a:hover, button {
 	padding:30px 100px 10px 100px;
 }
 
-.content .aran h2{
+.content .aran h2,#content .aper .general h2{
 	background:#4470b5;
 	color:#FFF;
+	line-height:none;
 	font-family: 'HelveticaCondensed';
 	font-size:14px;
 	text-align:center;
-	padding:5px 0 5px 0;
+}
+.aper .general form{
+	margin-top:20px;}
+
+.general form input{
+	width:598px;
+	margin-left:6px;
+	padding:4px 8px 4px 8px;
+	background:#ebebeb;
+	border:solid 1px #c0c0c0;
+}
+.general form select{
+	width:200px;
+	margin-left:6px;
+	padding:4px 8px 4px 8px;
+	background:#ebebeb;
+	border:solid 1px #c0c0c0;}
+
+.general form input.domicilio{
+	width:475px;
+}
+.general form .check p{
+	position:relative;
+	float:left;
+	display:block;
+}
+.general form .check input{
+	width:20px;
+	height:20px;
+	margin-top:10px;
+	background:#ebebeb;
+	border:solid 1px #c0c0c0;
+	position:relative;
+	float:left;
+}
+.general form .check span{
+	position:relative;
+	float:left;
+	margin-left:5px;
+}
+
+
+.aper .general p a{
+	position:relative;
+	float:right;
+	color:#002338;
+	border:2px solid #002338;
+	letter-spacing:1px;
+	line-height: normal;
+	padding:7px 20px 7px 20px;
+}
+.general form div{
+	width:19%;
+	position:relative;
+	float:left;
 }
 .content .aran .izq{
 	width:60%;
@@ -269,12 +326,66 @@ a, a:hover, button {
 	font-family: 'HelveticaMediumCondensed';
 	font-size:12px;}
 
+#content .content .aper{
+	color:#4470b5;
+	padding:30px 123px 10px 123px;
+} 
+#content .aper .perfi,#content .aper .perju{
+	position:relative;
+	float:left;
+	width:30%;
+	margin-top:30px;
+}
+#content .aper .perfi{
+	margin-left:20%;
+	background:#4470b5;
+}
+#content .aper .perju{
+	margin-right:20%;
+	background:#009de0;
+}
+#content .aper .per-in{
+	color:#fff;
+	padding:20px 20px 30px 20px;}
+
+.aper .per-in h2{
+	color:#FFF;
+	font-size:26px;
+	font-weight:normal;
+	font-family: 'HelveticaMediumCondensed';}
+
+#content .aper .general{
+	margin:20px 0 20px 0;
+	color:#002338;
+	line-height:40px;
+}
+
+#content .aper .mensaje{
+	background:#4470b5;
+	padding:40px;
+}
+
+.aper .mensaje h2{
+	color:#FFF;
+	font-size:36px;
+	font-weight:normal;
+	font-family: 'HelveticaMediumCondensed';
+}
+.aper .mensaje p{
+	color:#FFF;
+	line-height:30px;}
+
+.aper p.right{
+	float:right;}
+
+.apertura .cotizacion{
+	background:#ebebeb;}
+
 #content .content .cotizacion{
 	height:54px;
 	padding:20px 0 20px 0;}
 
 #content .ap a,#content .inv a{
-	text-decoration:none;
 	position:relative;
 	float:left;
 	border:2px solid #fff;
@@ -343,9 +454,6 @@ a, a:hover, button {
 	letter-spacing:2px;
 	background:#9a9a9a;}
 
-#content .content .readmore a{
-	text-decoration:none;}
-
 /* --- //CONTENT --- */
 
 
@@ -373,7 +481,6 @@ a, a:hover, button {
 	padding-top:55px;
 	background:url(images/contact.png) center no-repeat;}
 .contact a{
-	text-decoration:none;
 	border:2px solid #fff;
 	padding:10px;
 }
@@ -392,7 +499,6 @@ a, a:hover, button {
 	height:auto;
 }
 #footer a{
-	text-decoration:none;
 	color:#FFF;
 	line-height:20px;
 }
